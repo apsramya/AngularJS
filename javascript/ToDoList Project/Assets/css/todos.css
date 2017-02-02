@@ -1,0 +1,88 @@
+body{
+background: #2BC0E4; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #2BC0E4 , #EAECC6); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #2BC0E4 , #EAECC6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+}
+
+#container{	
+	margin : 100px auto;/*while 0 auto puts it in center*/
+	background: #f7f7f7;
+	width: 360px;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;/*to create a strike through effect*/
+}
+
+h1{
+	background: #2980b9;
+	color:white;
+	margin:0;
+	padding: 10px 20px;
+	text-transform: uppercase; /*to uppercase*/
+	font-weight: normal;
+	font-size: 24px;
+}
+
+ul{
+	list-style: none; /*to remove the bullet points*/
+	padding: 0;
+	margin: 0;
+
+}
+
+body{
+	font-family: Roboto;
+}
+
+li:nth-child(odd){
+	background: white;
+}
+
+li{
+	height: 40px; /*to increase the size on each cell*/
+	line-height: 40px;/*to make the font center aligned*/
+	color:#666;
+}
+
+input{
+	font-size: 18px;
+	color: #2980b9;
+	background: #f7f7f7;
+	width: 100%;/*to increase to full container..*/
+	padding:13px 13px 13px 20px;
+	box-sizing: border-box; /*to set the input field to the container
+							since it now extends more..it includes
+							padding but not the margin.*/
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+	background: #fff;
+	border: 3px solid #2980b9;
+	outline : none;/*refers to the border on the cell*/
+}
+
+.fa-plus{
+	float:right; /*right align*/
+}
+
+span{
+	background: #e74c3c;
+	height: 40px;
+	color: white;
+	width: 0;
+	text-align: center;
+	margin-right: 20px;
+	display: inline-block;
+	transition: 0.2s linear; /*fading out slow*/
+	opacity: 0; /* it is removed completely*/
+}
+
+li:hover span{
+	opacity: 1.0;
+	width: 40px;
+
+}
